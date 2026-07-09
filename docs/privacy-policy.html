@@ -83,6 +83,12 @@
         Launcher preferences, hidden app choices, home layout, search history, PIN state, and
         recovery phrase verification data are stored locally on your device using app storage.
       </p>
+      <p>
+        If you create a backup, Redox saves selected launcher preferences and layout data to a
+        backup file. Manual backups are saved to the location you choose. If automatic backup is
+        enabled, Redox saves backup files locally in Downloads/RedoxLauncher/Backups and keeps
+        only the number of latest backups you choose.
+      </p>
 
       <h2>Optional feature data</h2>
       <p>
@@ -93,6 +99,7 @@
         <li>Weather may use approximate location to request local weather.</li>
         <li>Now Playing may use notification access to show active media and music/audio access to reopen remembered local audio.</li>
         <li>Smart controls may use Bluetooth, camera, and Do Not Disturb access for local device controls.</li>
+        <li>Cloud backup upload sends the backup file only to the cloud app or provider you select, such as OneDrive, Google Drive, or Dropbox.</li>
       </ul>
 
       <h2>Optional diagnostics</h2>
@@ -122,6 +129,7 @@
       <p>
         You can turn Crash reports and Usage analytics on or off at any time from Security and
         privacy. Turning a toggle off immediately stops that Firebase collection path in the app.
+        You can also disable automatic backup at any time from Backup and restore.
       </p>
 
       <h2>Retention and deletion</h2>
@@ -130,6 +138,10 @@
         privacy data, clear app data, or uninstall Redox. Optional Firebase diagnostic and
         analytics data is retained according to the project retention settings for those Google
         services.
+      </p>
+      <p>
+        Backup files remain where they are saved until you delete them. Automatic backup deletes
+        older automatic backup files based on the Keep latest backups setting.
       </p>
 
       <h2>Privacy contact</h2>
